@@ -477,7 +477,10 @@
   562  cd ..
   563  cd ..
   564  cd
+
+       # shows history
   565  history
+
   566  history | less
   567  history > moving_around.txt
   568  moving_around.txt
