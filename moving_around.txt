@@ -1,0 +1,507 @@
+   86  npm install -g grunt-cli
+   87  sudo npm install -g grunt-cli
+   88  grunt
+   89  ls
+   90  gruntfile.js
+   91  grunt gruntfile.js
+   92  npm install
+   93  grunt
+   94  subl .
+   95  node
+   96  var hello = {
+   97  klingon: "nuqneH",
+   98  romulan: "Jolan\"tru",
+   99  "federation standard": "hello"
+  100  };
+  101  node
+  102  git clone $(function() {
+  103    $("button").click(function() {
+  104      var url = $(this).attr("id");
+  105      $.get(url, function(response) {
+  106        var resText;
+  107        if (typeof response === "object") {
+  108          resText = response.setup + ": " + response.punchline;
+  109        } else {
+  110          resText = response;
+  111        }
+  112        $("#ajax-text").text(resText);
+  113      });
+  114    });
+  115    $("#piglatin").on("submit", function(e) {
+  116      e.preventDefault();
+  117      var firstname = $("input[name=firstname]").val();
+  118      var lastname = $("input[name=lastname]").val();
+  119      var name = { firstname: firstname, lastname: lastname };
+  120      $.post("piglatin", name, function(response) {
+  121        var piglatinified = response.firstname + " " + response.lastname;
+  122        $("#piglatinified").text(piglatinified);
+  123      });
+  124    });
+  125  })
+  126  git clone https://github.com/surfwalker/simple-site.git
+  127  which git
+  128  git checkout -b finalapp
+  129  which branch
+  130  git status
+  131  git clone var express = require("express");
+  132  var app = express();
+  133  var bodyparser = require("body-parser");
+  134  var port = process.env.PORT || 3000;
+  135  var piglatinify = require("./lib/piglatinify.js");
+  136  app.use(bodyparser.json());
+  137  app.use(bodyparser.urlencoded({
+  138  extended: true
+  139  }));
+  140  app.use(express.static(__dirname + "/app/"));
+  141  var quotes = [
+  142    "I have not failed. I've just found 10,000 ways that won't work. - Thomas Edison",
+  143    "No matter where you go, there you are.",
+  144    "If it is a good idea, go ahead and do it. It is much easier to apologize than to get permission. - Rear Admiral Grace Hopper, USN, Ph.D"
+  145  ];
+  146  var jokes = [
+  147    { setup: "What's the difference between a guitar and a fish?",;     punchline: "You can't tuna fish." },;   { setup: "What do you get when you cross a cow and a duck?",;     punchline: "Milk and quackers." },;   { setup: "How many tickles does it take to make an octopus laugh?",;     punchline: "Ten Tickles" }; ]; app.get("/joke", function(req, res) {
+  148    var randomIndex = Math.floor(Math.random() * jokes.length);
+  149    res.json(jokes[randomIndex]);
+  150  });
+  151  app.get("/quote", function(req, res) {
+  152    var randomIndex = Math.floor(Math.random() * quotes.length);
+  153    res.send(quotes[randomIndex]);
+  154  });
+  155  app.post("/piglatin", function(req, res) {
+  156    var firstname = piglatinify(req.body.firstname);
+  157    var lastname = piglatinify(req.body.lastname);
+  158    var piglatined = { firstname: firstname, lastname: lastname };
+  159    res.json(piglatined);
+  160  });
+  161  app.get("/", function(req, res) {
+  162    res.sendFile("index.html");
+  163  });
+  164  app.listen(port, function() {
+  165    console.log("server starting. available at http://localhost:" + port);
+  166  });
+  167  // app.get("/", function(req, res) {
+  168  //   res.send("hello, universe");
+  169  // });
+  170  git clone https://github.com/surfwalker/simple-site.git
+  171  cd git
+  172  git clone https://github.com/surfwalker/simple-site.git
+  173  git checkout -b finalapp
+  174  .git
+  175  git clone https://github.com/surfwalker/simple-site.git
+  176  cd simple-site/
+  177  git branch
+  178  git branch -a
+  179  git checkout -b finalapp
+  180  git push origin finalapp
+  181  git push origin finalapp
+  182  git push finalapp
+  183  ls -li
+  184  cd app
+  185  ls -li
+  186  cd ..
+  187  git push origin finalapp
+  188  nmp install --save express
+  189  npm install
+  190  --save express
+  191  npm install --saveexpress
+  192  npm install --save express
+  193  node server.js
+  194  cd..
+  195  cd desktop
+  196  cd ..
+  197  cd ..
+  198  cd desktop
+  199  cd simple-site
+  200  git status
+  201  cd ..
+  202  cd ..
+  203  cd desktop
+  204  git status
+  205  cd desktop
+  206  cd simple-site/
+  207  git status
+  208  git status
+  209  git status
+  210  node server.js
+  211  node
+  212  npm install
+  213  -- save express
+  214  cd ..
+  215  cd ..
+  216  cd desktop
+  217  cd simple-site/
+  218  git init
+  219  ls -la
+  220  git remote add origin https://github.com/surfwalker/simple-site.git
+  221  git remote -v
+  222  git status
+  223  ls -la
+  224  ls -la
+  225  cd node_modules/
+  226  ls -la
+  227  cd ..
+  228  npm install
+  229  sudo npm install
+  230  sudo npm install
+  231  git checkout -b surfapp
+  232  git status
+  233  git add .
+  234  git status
+  235  git commit -m "first commit of app"
+  236  git status
+  237  git push orign surfapp
+  238  git push origin surfapp
+  239  node server.js
+  240  node server.js
+  241  node server.js
+  242  node
+  243  node server.js
+  244  node server.js
+  245  node server.js
+  246  node server.js
+  247  node server.js
+  248  node server.js
+  249  node server.js
+  250  node server.js
+  251  node server.js
+  252  node server.js
+  253  node server.js
+  254  node server.js
+  255  node server.js
+  256  node server.js
+  257  node server.js
+  258  node server.js
+  259  node server.js
+  260  node server.js
+  261  git add .
+  262  gti status
+  263  git status
+  264  git add .
+  265  git commit -m "final commit of app"
+  266  git push origin surfapp
+  267  node server.js
+  268  heroku login
+  269  heroku login
+  270  heroku git:remote -a all-things-surfing
+  271  git add .
+  272  git commit -m "save for deploy"
+  273  what branch
+  274  git branch
+  275  git push heroku surfapp:master
+  276  grunt
+  277  --force
+  278  force
+  279  force grunt
+  280  grunt --force
+  281  grunt --force
+  282  grunt --force
+  283  git add .
+  284  git commit -m "after grunt changes"
+  285  git push origin surfapp
+  286  git status
+  287  git remote -v
+  288  git add .
+  289  git commit -m "final commit for grading"
+  290  git push origin surfapp
+  291  git push origin finalsurfapp
+  292  git push origin surfapp
+  293  grunt
+  294  grunt --force
+  295  grunt
+  296  grunt
+  297  node server.js
+  298  grunt
+  299  ls -la
+  300  grunt
+  301  cd simple-site/
+  302  grunt
+  303  cd ..
+  304  cd desktop
+  305  cd simple-site/
+  306  grunt
+  307  node server.js
+  308  desktop
+  309  cd desktp[
+  310  cd desktop
+  311  cd simple-site/
+  312  node server.js
+  313  node
+  314  cd desktop
+  315  ls -la
+  316  cd Code Challenge
+  317  cd Code\ Challenge
+  318  ls -la
+  319  cd challenge\ 2
+  320  node server.js
+  321  cd desktop
+  322  cd Foundations 2
+  323  ls -la
+  324  cd ..
+  325  cd Desktop
+  326  cd Foundations2
+  327  cd Foundations 2
+  328  cd Foundations \2
+  329  cd Foundations II
+  330  cd Foundations\
+  331  cd Foundations\ II
+  332  cd lab2-adv.js
+  333  cd lab2
+  334  cd lab2-adv.js
+  335  cd lab2-adv.js
+  336  grunt
+  337  npm
+  338  npm install
+  339  grunt
+  340  node lab2-adv.js
+  341  desktop
+  342  cd desktop
+  343  cd Code Challenges
+  344  cd Code \Challenges
+  345  cd CodeChallenges
+  346  node server.js
+  347  node
+  348  node server.js
+  349  node server.js
+  350  cd desktop
+  351  cd CodeChallenges
+  352  node server.js
+  353  node server.js
+  354  node server.js
+  355  nmp install
+  356  install nom
+  357  npm
+  358  npm install
+  359  node server.js
+  360  node server.js
+  361  cd desktop
+  362  cd CodeChallenges
+  363  ls -la
+  364  cd Question\ 2
+  365  ls -la
+  366  node server.js
+  367  node server.js
+  368  node server.js
+  369  cd desktop
+  370  cd CodingChallenges
+  371  cd CodeChalleneges
+  372  cd CodeChallenges
+  373  cd Question\ 2
+  374  node server.js
+  375  node server.js
+  376  node server.js
+  377  node server.js
+  378  node server.js
+  379  node server.js
+  380  node server.js
+  381  node server.js
+  382  node server.js
+  383  server.js
+  384  node server.js
+  385  cd desktop
+  386  cd CodeChallenges
+  387  cd Question\ 2
+  388  node server.js
+  389  cd desktop
+  390  cd CodeChallenges
+  391  ls -la
+  392  cd Question\ 2
+  393  node server.js
+  394  node server.js
+  395  cd desktop
+  396  cd CODECHALLENGRES
+  397  cd codechallenges
+  398  cd Question\ 2
+  399  node server.js
+  400  node server.js
+  401  node server.js
+  402  node server.js
+  403  cd desktop
+  404  cd codechallenges
+  405  cd Question\ 2
+  406  node server.js
+  407  cd desktop
+  408  cd codechallenges
+  409  cd Question\ 2
+  410  node server.js
+  411  node server.js
+  412  cd desktop
+  413  cd CodeChallenges/Question\ 2
+  414  node server.js
+  415  node
+  416  npm install jshint
+  417  npm install -g jshint
+  418  cd desktop
+  419  cd CF\ F1/
+  420  Homework1/
+  421  cd Homework1/
+  422  jshint jason.js
+  423  npm install jshint
+  424  jshint jason.js
+  425  npm install sudo jshint
+  426  jshint jason.js
+  427  npm install jshint
+  428  node
+  429  cd desktop
+  430  cd CodeChallenges
+  431  cd Question\ 2
+  432  node server.js
+  433  top
+  434  cd..
+  435  cd ..
+  436  cd desktop
+  437  desktop
+  438  cd desktp[
+  439  cd desktop
+  440  cd..
+  441  cd
+  442  cd
+  443  cd desktop
+  444  cd Foundations2
+  445  cd Foundations\ 2
+  446  mkdir lab1-beg-track
+  447  cd lab1-beg-track/
+  448  node
+  449  git clone https://github.com/ReidsRepo/lab1-beg-track.git
+  450  npm install
+  451  node
+  452  npm install -g jshint
+  453  npm install
+  454  ls -la
+  455  node lab1.js
+  456  grunt
+  457  npm install -g grunt-cli
+  458  sudo npm install
+  459  sudo npm install
+  460  sudo
+  461  sudo npm install -g grunt-cli
+  462  ls -la
+  463  cd lab1-beg-track/
+  464  ls -la
+  465  git clone https://github.com/ReidsRepo/lab1-beg-track.git
+  466  node
+  467  uname
+  468  cd..
+  469  cd ..
+  470  ls -li
+  471  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/install/master/install)"
+  472  brew help
+  473  brew update
+  474  brew doctor
+  475  sudo xcode-select -switch /Developer
+  476  sudo xcode-select -switch /Developer
+  477  brew install fish
+  478  cd ..
+  479  cd ..
+  480  brew doctor
+  481  sudo xcode-select -switch /Developer
+  482  brew install fish
+  483  curl -fsSL http://git.io/beJs | ruby
+  484  curl -fsSL http://git.io/beJs | ruby
+  485  brew in
+  486  fish_update_completions
+  487  ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+  488  ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+  489  subl ~/.config/fish/config.fish
+  490  which subl
+  491  subl
+  492  echo $EDITOR
+  493  echo $PATH
+  494  subl /etc/paths
+  495  echo $PATH
+  496  brew doctor
+  497  brew install git
+  498  install git
+  499  git --version
+  500  install git
+  501  git version
+  502  git
+  503  history
+  504  ls
+  505  ls -t
+  506  ls -l
+  507  ls
+  508  ls -lt
+  509  ls -rtl
+  510  ls -li
+  511  man
+  512  man ls
+  513  man ls
+  514  man ls
+  515  man ls
+  516  $HOME
+  517  cd
+  518  cd desktop
+  519  cd
+  520  cd desktop
+  521  $HOME
+  522  cd
+  523  ls
+  524  cd Send/ Registration
+  525  cd Send Registration
+  526  cd "Send Registration"
+  527  cd "Desktop"
+  528  cd
+  529  cd Desktop/
+  530  cd
+  531  cd Desktop
+  532  cd
+  533  ls -l
+  534  cd Documents/
+  535  cd..
+  536  cd ..
+  537  pwd
+  538  cd Documents
+  539  ls
+  540  cd Be
+  541  ls
+  542  cd CHRISTMAS\ 2014.doc
+  543  CHRISTMAS
+  544  CHRISTMAS\ 2014.doc
+  545  open CHRISTMAS\ 2014.doc
+  546  close CHRISTMAS\ 2014.doc
+  547  close
+  548  history 50
+  549  ls
+  550  open Calorie\ Counting.doc
+  551  open Parish\ Changes.doc
+  552  cd Silliness.doc
+  553  open Silliness.doc
+  554  open Just\ Thinking.doc
+  555  open Future\ Dreams/
+  556  cd Future\ Dreams/
+  557  ls
+  558  open Future\ Home\ Wishlist.doc
+  559  open Future\ Wedding\ Ideas.doc
+  560  cd..
+  561  cd ..
+  562  cd ..
+  563  cd ..
+  564  cd
+  565  history
+  566  history | less
+  567  history > moving_around.txt
+  568  moving_around.txt
+  569  ls
+  570  open moving_around.txt
+  571  delete moving_around.txt
+  572  rm moving_around.txt
+  573  ls
+  574  ls Documents
+  575  ls Desktop
+  576  history > moving_around.txt
+  577  ls -l moving_around.txt
+  578  history >> moving_around.txt
+  579  ls -l moving_around.txt
+  580  rm moving_around.txt
+  581  ls
+
+       # takes the contents of history and creates a txt file containing the history
+  582  history > moving.txt
+
+       # opens the moving text file using sublime
+  583  subl moving.txt
+
+       # removes the moving text file
+  584  rm moving.txt
+
+  585  history > moving_around.txt
