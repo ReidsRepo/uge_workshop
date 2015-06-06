@@ -2,13 +2,16 @@
    87  sudo npm install -g grunt-cli
    88  grunt
    89  ls
-   90  gruntfile.js
+   90 Changed something here.
    91  grunt gruntfile.js
    92  npm install
    93  grunt
    94  subl .
    95  node
+
+       #changing for the hell of it
    96  var hello = {
+
    97  klingon: "nuqneH",
    98  romulan: "Jolan\"tru",
    99  "federation standard": "hello"
@@ -508,3 +511,35 @@
   584  rm moving.txt
 
   585  history > moving_around.txt
+  524  git add moving_around.txt
+  525  git status
+  526  git commit -m "adding history notes, first draft"
+  527  git status
+
+       # chaking the git log
+  528  git log
+
+  529  subl moving_around.txt
+
+       # checking the git status
+  530  git status
+
+  531  git add moving_around.txt
+  532  git status
+  533  git diff
+  534  git diff moving_around.txt
+
+       # checking the differences since last commit
+  535  git diff --staged
+
+  536  git commit -m "Describe what history does in command terminal"
+  537  git status
+  538  git status
+  539  cd ..
+  540  cd uge_workshop/
+  541  subl moving_around.txt
+  542  git status
+  543  git log
+  544  git add --all
+  545  git log
+
